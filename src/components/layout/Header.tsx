@@ -40,8 +40,8 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-                    ? 'glass shadow-medium py-3'
-                    : 'bg-transparent py-4'
+                ? 'glass shadow-medium py-3'
+                : 'bg-transparent py-4'
                 }`}
         >
             <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
@@ -65,8 +65,8 @@ export default function Header() {
                             key={link.href}
                             href={link.href}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${pathname === link.href
-                                    ? 'bg-pink-100 text-pink-600'
-                                    : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
+                                ? 'bg-pink-100 text-pink-600'
+                                : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
                                 }`}
                         >
                             {link.label}
@@ -146,41 +146,72 @@ export default function Header() {
                                 href={link.href}
                                 onClick={() => setMenuOpen(false)}
                                 className={`px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${pathname === link.href
-                                        ? 'bg-pink-100 text-pink-600'
-                                        : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
+                                    ? 'bg-pink-100 text-pink-600'
+                                    : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
                                     }`}
                             >
                                 {link.label}
                             </Link>
                         ))}
 
-                        <div className="border-t border-gray-100 mt-2 pt-2 flex gap-2">
-                            <button
-                                onClick={toggleLocale}
-                                className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-xl text-sm text-gray-600 hover:bg-pink-50 border border-gray-200"
-                            >
-                                <Globe className="w-4 h-4" />
-                                {locale === 'ko' ? 'English' : '한국어'}
-                            </button>
-
-                            {session ? (
-                                <button
-                                    onClick={() => signOut()}
-                                    className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-xl text-sm text-gray-600 hover:bg-red-50 hover:text-red-500 border border-gray-200"
+                        {session ? (
+                            <>
+                                <Link
+                                    href={`/${locale}/profile`}
+                                    onClick={() => setMenuOpen(false)}
+                                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${pathname === `/${locale}/profile`
+                                        ? 'bg-pink-100 text-pink-600'
+                                        : 'text-gray-600 hover:text-pink-600 hover:bg-pink-50'
+                                        }`}
                                 >
-                                    <LogOut className="w-4 h-4" />
-                                    {t('signout')}
+                                    {session.user?.image ? (
+                                        <Image
+                                            src={session.user.image}
+                                            alt="Profile"
+                                            width={24}
+                                            height={24}
+                                            className="rounded-full"
+                                        />
+                                    ) : (
+                                        <User className="w-5 h-5" />
+                                    )}
+                                    <span>{session.user?.name} {t('profile') || '(프로필)'}</span>
+                                </Link>
+                                <div className="border-t border-gray-100 mt-2 pt-2 flex gap-2">
+                                    <button
+                                        onClick={toggleLocale}
+                                        className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-xl text-sm text-gray-600 hover:bg-pink-50 border border-gray-200"
+                                    >
+                                        <Globe className="w-4 h-4" />
+                                        {locale === 'ko' ? 'English' : '한국어'}
+                                    </button>
+                                    <button
+                                        onClick={() => signOut()}
+                                        className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-xl text-sm text-red-500 hover:bg-red-50 border border-red-100"
+                                    >
+                                        <LogOut className="w-4 h-4" />
+                                        {t('signout')}
+                                    </button>
+                                </div>
+                            </>
+                        ) : (
+                            <div className="border-t border-gray-100 mt-2 pt-2 flex gap-2">
+                                <button
+                                    onClick={toggleLocale}
+                                    className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-xl text-sm text-gray-600 hover:bg-pink-50 border border-gray-200"
+                                >
+                                    <Globe className="w-4 h-4" />
+                                    {locale === 'ko' ? 'English' : '한국어'}
                                 </button>
-                            ) : (
                                 <button
                                     onClick={() => signIn('google')}
-                                    className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-xl text-sm bg-gradient-to-r from-pink-500 to-purple-500 text-white"
+                                    className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-xl text-sm bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-sm"
                                 >
                                     <LogIn className="w-4 h-4" />
                                     {t('signin')}
                                 </button>
-                            )}
-                        </div>
+                            </div>
+                        )}
                     </nav>
                 </div>
             )}
