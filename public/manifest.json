@@ -1,0 +1,23 @@
+{
+    "name": "Palette",
+    "short_name": "Palette",
+    "description": "나만의 퍼스널컬러를 발견하세요",
+    "start_url": "/ko",
+    "display": "standalone",
+    "background_color": "#FFF5F0",
+    "theme_color": "#F9C5D1",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/icons/icon.png",
+            "sizes": "192x192 512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "lifestyle",
+        "beauty"
+    ],
+    "lang": "ko"
+}

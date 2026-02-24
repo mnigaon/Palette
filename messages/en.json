@@ -1,0 +1,912 @@
+{
+    "nav": {
+        "home": "Home",
+        "test": "Color Test",
+        "palette": "Color Palette",
+        "shop": "Shopping",
+        "profile": "Profile",
+        "start": "Start Test",
+        "signin": "Sign In",
+        "signout": "Sign Out"
+    },
+    "home": {
+        "hero": {
+            "badge": "✨ AI Personal Color Analysis",
+            "title": "Discover Your",
+            "title2": "True Colors",
+            "subtitle": "Find your personal color season in just 10 minutes. Are you Spring Warm, Summer Cool, Autumn Warm, or Winter Cool?",
+            "cta": "Take the Free Test",
+            "secondary": "Explore Palettes"
+        },
+        "features": {
+            "title": "Why Palette is Special",
+            "subtitle": "Based on scientific color theory, we find the perfect colors just for you",
+            "diagnosis": {
+                "title": "Accurate Color Diagnosis",
+                "desc": "15 carefully crafted questions to accurately identify your personal color season"
+            },
+            "palette": {
+                "title": "Custom Color Palette",
+                "desc": "We suggest optimal colors for clothing, makeup, and hair based on your season"
+            },
+            "shopping": {
+                "title": "Smart Shopping Picks",
+                "desc": "Curated real product recommendations matched to your personal color"
+            }
+        },
+        "seasons": {
+            "title": "4 Personal Color Seasons",
+            "spring": {
+                "name": "🌸 Spring Warm",
+                "desc": "Vibrant peach and coral colors suit this warm, bright season",
+                "keywords": [
+                    "Radiant",
+                    "Bright",
+                    "Warm"
+                ]
+            },
+            "summer": {
+                "name": "🌊 Summer Cool",
+                "desc": "Soft rose and lavender colors suit this elegant, cool season",
+                "keywords": [
+                    "Elegant",
+                    "Calm",
+                    "Cool"
+                ]
+            },
+            "autumn": {
+                "name": "🍂 Autumn Warm",
+                "desc": "Deep terracotta and olive colors suit this rich, natural season",
+                "keywords": [
+                    "Deep",
+                    "Luxurious",
+                    "Natural"
+                ]
+            },
+            "winter": {
+                "name": "❄️ Winter Cool",
+                "desc": "Bold burgundy and navy colors suit this chic, dramatic season",
+                "keywords": [
+                    "Chic",
+                    "Intense",
+                    "Clear"
+                ]
+            }
+        },
+        "cta": {
+            "title": "Start Your Journey Now",
+            "subtitle": "Knowing your personal color cuts your morning routine in half!",
+            "button": "Free Personal Color Test"
+        }
+    },
+    "test": {
+        "title": "Personal Color Diagnosis",
+        "subtitle": "Answer honestly for the most accurate results!",
+        "progress": "Progress",
+        "question": "Question",
+        "of": "of",
+        "next": "Next",
+        "prev": "Previous",
+        "submit": "See Results",
+        "questions": [
+            {
+                "id": 1,
+                "text": "What is your natural skin undertone?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Warm, yellowish undertone",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Cool, pinkish undertone",
+                        "scores": {
+                            "summer": 2,
+                            "winter": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Neutral (not sure)",
+                        "scores": {
+                            "spring": 1,
+                            "summer": 1,
+                            "autumn": 1,
+                            "winter": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "text": "How does your skin react to sun exposure?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "I tan easily and get a golden glow",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "I rarely tan, I get pink/red instead",
+                        "scores": {
+                            "summer": 2,
+                            "winter": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "I tan a little then return to normal",
+                        "scores": {
+                            "spring": 1,
+                            "summer": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "text": "What is your natural eye color?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Brown to light brown",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 1
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Dark brown to black",
+                        "scores": {
+                            "winter": 2,
+                            "autumn": 1
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Grayish-brown to soft brown",
+                        "scores": {
+                            "summer": 2,
+                            "spring": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "text": "What is your natural hair color?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Light brown, golden-toned brown",
+                        "scores": {
+                            "spring": 3
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Dark brown with reddish tones",
+                        "scores": {
+                            "autumn": 3
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Very dark brown, almost black",
+                        "scores": {
+                            "winter": 2,
+                            "summer": 1
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Soft, ashy brown",
+                        "scores": {
+                            "summer": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "text": "Which white looks better on you?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Ivory (warm white)",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Pure white (cool white)",
+                        "scores": {
+                            "summer": 2,
+                            "winter": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Both look similar on me",
+                        "scores": {
+                            "spring": 1,
+                            "summer": 1,
+                            "autumn": 1,
+                            "winter": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "text": "Which metal makes your skin glow more?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Gold",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Silver",
+                        "scores": {
+                            "summer": 2,
+                            "winter": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Both look great on me",
+                        "scores": {
+                            "spring": 1,
+                            "summer": 1,
+                            "autumn": 1,
+                            "winter": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "text": "Which color would suit you best?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "🍑 Peach / Apricot",
+                        "scores": {
+                            "spring": 3
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "🌹 Rose Pink / Mauve",
+                        "scores": {
+                            "summer": 3
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "🍂 Terracotta / Camel",
+                        "scores": {
+                            "autumn": 3
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "💜 Burgundy / Royal Blue",
+                        "scores": {
+                            "winter": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "text": "Can you see your veins? What color are they?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Green or olive-toned",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Blue or purple-toned",
+                        "scores": {
+                            "summer": 2,
+                            "winter": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Hard to see them",
+                        "scores": {
+                            "spring": 1,
+                            "summer": 1,
+                            "autumn": 1,
+                            "winter": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "text": "Which vibe do you feel most matches you?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Bright and fresh spring energy",
+                        "scores": {
+                            "spring": 3
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Elegant and soft summer feel",
+                        "scores": {
+                            "summer": 3
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Deep and warm autumn mood",
+                        "scores": {
+                            "autumn": 3
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Clear and chic winter aura",
+                        "scores": {
+                            "winter": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "text": "When you wear neon or fluorescent colors:",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "It looks vibrant and great on me",
+                        "scores": {
+                            "spring": 2,
+                            "winter": 1
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Too overwhelming, doesn't suit me",
+                        "scores": {
+                            "summer": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Depends on how I pair it",
+                        "scores": {
+                            "spring": 1,
+                            "winter": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "text": "When you wear all-black:",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "I look chic and sophisticated",
+                        "scores": {
+                            "winter": 3,
+                            "summer": 1
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "My face looks dull or tired",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "It's okay, nothing special",
+                        "scores": {
+                            "summer": 1,
+                            "winter": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "text": "When you wear orange:",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "I look lively and it suits me well",
+                        "scores": {
+                            "spring": 2,
+                            "autumn": 2
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "It looks garish or weird on me",
+                        "scores": {
+                            "summer": 2,
+                            "winter": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Bright, warm orange suits me",
+                        "scores": {
+                            "spring": 2
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Dark terracotta suits me better",
+                        "scores": {
+                            "autumn": 2
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 13,
+                "text": "Do light pastel colors suit you?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Yes, they look amazing on me",
+                        "scores": {
+                            "spring": 2,
+                            "summer": 2
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "They wash me out, not flattering",
+                        "scores": {
+                            "autumn": 1,
+                            "winter": 2
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Warm pastels (peach, apricot) suit me",
+                        "scores": {
+                            "spring": 3
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Cool pastels (lavender, mint) suit me",
+                        "scores": {
+                            "summer": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "text": "What compliment do you receive most often?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "\"Your skin looks so clear and glowing\"",
+                        "scores": {
+                            "spring": 2,
+                            "summer": 1
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "\"You look so elegant and refined\"",
+                        "scores": {
+                            "summer": 2,
+                            "winter": 1
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "\"You look so natural and comfortable\"",
+                        "scores": {
+                            "autumn": 3
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "\"You look sophisticated and charismatic\"",
+                        "scores": {
+                            "winter": 3
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "text": "What's your preferred makeup style?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Peachy coral makeup",
+                        "scores": {
+                            "spring": 3
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Rose pink romantic makeup",
+                        "scores": {
+                            "summer": 3
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Brown earthy tone makeup",
+                        "scores": {
+                            "autumn": 3
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Red berry bold makeup",
+                        "scores": {
+                            "winter": 3
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "result": {
+        "title": "Your Personal Color is",
+        "subtitle": "Here are your test results!",
+        "yourSeason": "Your Season",
+        "characteristics": "Key Characteristics",
+        "bestColors": "Colors That Suit You",
+        "avoidColors": "Colors to Avoid",
+        "makeup": "Recommended Makeup Colors",
+        "hair": "Recommended Hair Colors",
+        "retake": "Retake the Test",
+        "goShop": "See Shopping Picks",
+        "shareCopy": "Share Results",
+        "seasons": {
+            "spring": {
+                "name": "Spring Warm",
+                "emoji": "🌸",
+                "subtype": "Spring Light / Spring Vivid",
+                "description": "You are the vibrant and radiant Spring Warm type! Warm, bright colors suit you best. Peach, coral, and apricot tones make your skin glow with clarity. Embrace bright, lively colors to create an energetic and fresh look!",
+                "characteristics": [
+                    "Clear, bright complexion",
+                    "Warm ivory base tone",
+                    "Golden-toned eyes",
+                    "Golden sheen"
+                ],
+                "bestColors": [
+                    "#FFBFA0",
+                    "#FF7F5C",
+                    "#FFD980",
+                    "#90EE90",
+                    "#87CEEB",
+                    "#FFF8F0",
+                    "#FFB347",
+                    "#FF69B4"
+                ],
+                "bestColorNames": [
+                    "Peach",
+                    "Coral",
+                    "Golden Yellow",
+                    "Light Green",
+                    "Sky Blue",
+                    "Warm Ivory",
+                    "Orange Gold",
+                    "Light Pink"
+                ],
+                "avoidColors": [
+                    "#4B0082",
+                    "#800020",
+                    "#2F4F4F",
+                    "#696969",
+                    "#000000"
+                ],
+                "avoidColorNames": [
+                    "Deep Purple",
+                    "Burgundy",
+                    "Deep Green",
+                    "Charcoal",
+                    "Black"
+                ],
+                "makeupColors": [
+                    "#FF9F7F",
+                    "#FF6B6B",
+                    "#FFB347",
+                    "#FF8C94",
+                    "#FFCBA4"
+                ],
+                "makeupColorNames": [
+                    "Peach Lip",
+                    "Coral Blush",
+                    "Golden Eye",
+                    "Coral Pink",
+                    "Apricot Foundation"
+                ],
+                "hairColors": [
+                    "#D4A843",
+                    "#C8893A",
+                    "#E8C878",
+                    "#B8860B"
+                ]
+            },
+            "summer": {
+                "name": "Summer Cool",
+                "emoji": "🌊",
+                "subtype": "Summer Light / Summer Muted",
+                "description": "You are the graceful and romantic Summer Cool type! Cool, soft colors flatter you most. Rose pink, lavender, and mauve tones make your skin beautifully luminous. Create a delicate and elegant style with pastels and muted tones!",
+                "characteristics": [
+                    "Soft, cool-toned complexion",
+                    "Pink base undertone",
+                    "Ashy eyes",
+                    "Silver sheen"
+                ],
+                "bestColors": [
+                    "#F5B8C4",
+                    "#C8B4E0",
+                    "#B4C8E0",
+                    "#C4A0B8",
+                    "#E8D5E0",
+                    "#F0E6FA",
+                    "#B8C8D0",
+                    "#D4B8C8"
+                ],
+                "bestColorNames": [
+                    "Rose Pink",
+                    "Lavender",
+                    "Soft Blue",
+                    "Mauve",
+                    "Rose Gray",
+                    "Lilac",
+                    "Blue Gray",
+                    "Dusty Rose"
+                ],
+                "avoidColors": [
+                    "#FF6B00",
+                    "#FFD700",
+                    "#8B4513",
+                    "#FF4500"
+                ],
+                "avoidColorNames": [
+                    "Orange",
+                    "Golden Yellow",
+                    "Brown",
+                    "Red Orange"
+                ],
+                "makeupColors": [
+                    "#C4A0B8",
+                    "#E8B4C0",
+                    "#B8A8C8",
+                    "#9890A8",
+                    "#F0D0D8"
+                ],
+                "makeupColorNames": [
+                    "Mauve Lip",
+                    "Rose Blush",
+                    "Purple Eye",
+                    "Gray Liner",
+                    "Cool Pink"
+                ],
+                "hairColors": [
+                    "#8B8589",
+                    "#6B7B8D",
+                    "#9B8EA8",
+                    "#7B7B8D"
+                ]
+            },
+            "autumn": {
+                "name": "Autumn Warm",
+                "emoji": "🍂",
+                "subtype": "Autumn Deep / Autumn Muted",
+                "description": "You are the deep and luxurious Autumn Warm type! Warm, earthy colors suit you beautifully. Terracotta, olive, and mustard tones inspired by nature give you a sophisticated, mature look. Embrace rich, deep colors for a polished and refined style!",
+                "characteristics": [
+                    "Warm, golden complexion",
+                    "Deep brown eyes",
+                    "Dark brown base",
+                    "Bronze sheen"
+                ],
+                "bestColors": [
+                    "#C4613C",
+                    "#7C8C5C",
+                    "#D4A843",
+                    "#C4501C",
+                    "#8B6914",
+                    "#A0784C",
+                    "#6B5E3C",
+                    "#8B4513"
+                ],
+                "bestColorNames": [
+                    "Terracotta",
+                    "Olive",
+                    "Mustard",
+                    "Burnt Orange",
+                    "Dark Gold",
+                    "Camel",
+                    "Khaki",
+                    "Brown"
+                ],
+                "avoidColors": [
+                    "#FFB6C1",
+                    "#E6E6FA",
+                    "#B0E0E6",
+                    "#F0FFFF"
+                ],
+                "avoidColorNames": [
+                    "Light Pink",
+                    "Lavender",
+                    "Powder Blue",
+                    "Mint"
+                ],
+                "makeupColors": [
+                    "#C4613C",
+                    "#A0522D",
+                    "#D4A843",
+                    "#8B6914",
+                    "#C67B50"
+                ],
+                "makeupColorNames": [
+                    "Terracotta Lip",
+                    "Brown Blush",
+                    "Gold Eye",
+                    "Khaki Liner",
+                    "Pecan Foundation"
+                ],
+                "hairColors": [
+                    "#654321",
+                    "#8B4513",
+                    "#A0522D",
+                    "#3D1C02"
+                ]
+            },
+            "winter": {
+                "name": "Winter Cool",
+                "emoji": "❄️",
+                "subtype": "Winter Deep / Winter Bright",
+                "description": "You are the bold and chic Winter Cool type! Cool, vivid colors look stunning on you. Deep burgundy, navy, and pure white create a dramatic, high-contrast look that brings out your charismatic side. Create a powerful, sophisticated style with bold color combinations!",
+                "characteristics": [
+                    "Cool, vivid complexion",
+                    "Dark eyes and brows",
+                    "High contrast features",
+                    "Silver sheen"
+                ],
+                "bestColors": [
+                    "#8C2040",
+                    "#1C2854",
+                    "#F8F8FF",
+                    "#E0B0C0",
+                    "#4B0082",
+                    "#000080",
+                    "#DC143C",
+                    "#800080"
+                ],
+                "bestColorNames": [
+                    "Deep Burgundy",
+                    "Navy",
+                    "Pure White",
+                    "Icy Pink",
+                    "Deep Purple",
+                    "Royal Blue",
+                    "Crimson",
+                    "Purple"
+                ],
+                "avoidColors": [
+                    "#F5DEB3",
+                    "#DEB887",
+                    "#D2B48C",
+                    "#BC8F8F"
+                ],
+                "avoidColorNames": [
+                    "Warm Beige",
+                    "Tan",
+                    "Warm Gray",
+                    "Rose Beige"
+                ],
+                "makeupColors": [
+                    "#8C2040",
+                    "#DC143C",
+                    "#4B0082",
+                    "#1C1C1C",
+                    "#800080"
+                ],
+                "makeupColorNames": [
+                    "Burgundy Lip",
+                    "Red Blush",
+                    "Purple Eye",
+                    "Black Liner",
+                    "Deep Plum"
+                ],
+                "hairColors": [
+                    "#1C1C1C",
+                    "#000000",
+                    "#2C2C2C",
+                    "#4A0404"
+                ]
+            }
+        }
+    },
+    "palette": {
+        "title": "Color Palette Explorer",
+        "subtitle": "Explore all colors across the 4 personal color seasons",
+        "myPalette": "My Palette",
+        "allSeasons": "All Seasons",
+        "bestColors": "Best Colors",
+        "avoidColors": "Avoid Colors",
+        "clothing": "Clothing",
+        "makeup": "Makeup",
+        "hair": "Hair",
+        "hex": "HEX",
+        "copy": "Copied!"
+    },
+    "shop": {
+        "title": "Personal Color Shopping",
+        "subtitle": "Products perfectly matched to your color season",
+        "myRecommended": "My Picks",
+        "allProducts": "All Products",
+        "categories": {
+            "all": "All",
+            "clothing": "Clothing",
+            "lipstick": "Lipstick",
+            "foundation": "Foundation",
+            "accessories": "Accessories",
+            "eyeshadow": "Eyeshadow"
+        },
+        "viewProduct": "View Product",
+        "season": "Recommended For",
+        "loginRequired": "Sign in to see recommendations for your color season!"
+    },
+    "profile": {
+        "title": "My Profile",
+        "myColor": "My Personal Color",
+        "noResult": "You haven't taken the test yet",
+        "takeTest": "Take the Test",
+        "retake": "Retake Test",
+        "testedAt": "Test Date",
+        "memberSince": "Member Since",
+        "settings": "Settings",
+        "logout": "Sign Out"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Something went wrong",
+        "back": "Go Back",
+        "share": "Share",
+        "save": "Save",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "copied": "Copied!",
+        "learnMore": "Learn More"
+    }
+}

@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Season gradient backgrounds */
+.bg-spring-gradient {
+  background: linear-gradient(135deg, #FFF0E8 0%, #FFE0D0 40%, #FFECF0 100%);
+}
+.bg-summer-gradient {
+  background: linear-gradient(135deg, #F8EEFF 0%, #FFE4F0 40%, #E8F0FF 100%);
+}
+.bg-autumn-gradient {
+  background: linear-gradient(135deg, #FFF5E8 0%, #FFE8D0 40%, #F5F0E8 100%);
+}
+.bg-winter-gradient {
+  background: linear-gradient(135deg, #F0E8FF 0%, #E8F0FF 40%, #FFE8F5 100%);
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.glass-dark {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Color swatch hover effects */
+.color-swatch {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.color-swatch:hover {
+  transform: scale(1.15) translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth scroll sections */
+.section-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Floating shapes */
+@keyframes floatShape {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-20px) rotate(5deg); }
+  66% { transform: translateY(-10px) rotate(-5deg); }
+}
+.float-shape {
+  animation: floatShape 6s ease-in-out infinite;
+}
+
+/* Progress bar */
+.progress-bar {
+  transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #F9C5D1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F490A5;
+}
+
+/* Button variants */
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-white
+    bg-gradient-to-r from-pink-400 to-purple-400 hover:from-pink-500 hover:to-purple-500
+    transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold
+    bg-white/70 backdrop-blur text-gray-800 border border-white/60
+    hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-sm;
+}
+.btn-outline {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold
+    border-2 border-pink-300 text-pink-600
+    hover:bg-pink-50 transition-all duration-300;
+}
+
+/* Card */
+.card {
+  @apply bg-white/80 backdrop-blur-sm rounded-3xl shadow-soft border border-white/60;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent;
+}
+.gradient-text-spring {
+  @apply bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent;
+}
+.gradient-text-summer {
+  @apply bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent;
+}
+.gradient-text-autumn {
+  @apply bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent;
+}
+.gradient-text-winter {
+  @apply bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent;
+}
+
+/* Season card hover */
+.season-card {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.season-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
